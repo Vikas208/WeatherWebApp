@@ -1,0 +1,52 @@
+.box {
+  width: 50vh;
+  margin: auto;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 30px;
+  box-shadow: 0 5px 6px rgb(0 0 0 / 14%), 0 6px 6px rgb(0 0 0 / 26%);
+  background-color: #6b37fa;
+}
+.box > input {
+  margin: 10px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  width: 40vh;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+.box > button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  cursor: pointer;
+  font-size: medium;
+}
+@keyframes changeColor {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #1f1f1f;
+  }
+}
+.box > button:active {
+  animation: changeColor;
+  animation-duration: 5s;
+}
+
+@media only screen and (max-width: 389px) {
+  .box {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .box {
+    margin-left: 60px;
+  }
+}
