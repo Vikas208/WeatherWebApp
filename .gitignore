@@ -25,3 +25,5 @@ yarn-error.log*
 /.firebase
 /firebase.json
 /.firebaserc
+
+/src/ApiKey.js
